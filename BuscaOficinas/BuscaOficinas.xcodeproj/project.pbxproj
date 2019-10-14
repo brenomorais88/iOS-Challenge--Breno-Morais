@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BC3B2149BED3D5746B9390D /* Pods_BuscaOficinasUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2732C71C1DA4C08CEFF5422A /* Pods_BuscaOficinasUITests.framework */; };
 		5053894D8C5448E0E545BDA8 /* Pods_BuscaOficinas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74AFDB009B733BCC631BE9F5 /* Pods_BuscaOficinas.framework */; };
 		54BC6CFC017A8D395EA33576 /* Pods_BuscaOficinasTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA96601C2E9BBBA0FC57CD73 /* Pods_BuscaOficinasTests.framework */; };
+		56319F092355135D003669A1 /* ListViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56319F082355135D003669A1 /* ListViewControllerSpec.swift */; };
+		56319F0B23552726003669A1 /* DetailViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56319F0A23552726003669A1 /* DetailViewControllerSpec.swift */; };
 		56B171092354CC840064267B /* ListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B171082354CC840064267B /* ListResponse.swift */; };
 		56B1710B2354E8880064267B /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B1710A2354E8880064267B /* Details.swift */; };
 		56DFBBF4233E81C100B6BD19 /* ListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DFBBF2233E81C100B6BD19 /* ListCell.swift */; };
@@ -21,8 +22,6 @@
 		56EF5D4A233E63DA00E929A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56EF5D48233E63DA00E929A9 /* Main.storyboard */; };
 		56EF5D4C233E63DC00E929A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 56EF5D4B233E63DC00E929A9 /* Assets.xcassets */; };
 		56EF5D4F233E63DC00E929A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56EF5D4D233E63DC00E929A9 /* LaunchScreen.storyboard */; };
-		56EF5D5A233E63DC00E929A9 /* BuscaOficinasTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EF5D59233E63DC00E929A9 /* BuscaOficinasTests.swift */; };
-		56EF5D65233E63DC00E929A9 /* BuscaOficinasUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EF5D64233E63DC00E929A9 /* BuscaOficinasUITests.swift */; };
 		56EF5D76233E656800E929A9 /* OficinaService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EF5D75233E656800E929A9 /* OficinaService.swift */; };
 		56EF5D79233E660800E929A9 /* Oficina.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EF5D78233E660800E929A9 /* Oficina.swift */; };
 		56EF5D7B233E7EEB00E929A9 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EF5D7A233E7EEB00E929A9 /* ListViewModel.swift */; };
@@ -36,18 +35,13 @@
 			remoteGlobalIDString = 56EF5D40233E63D900E929A9;
 			remoteInfo = BuscaOficinas;
 		};
-		56EF5D61233E63DC00E929A9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 56EF5D39233E63D900E929A9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 56EF5D40233E63D900E929A9;
-			remoteInfo = BuscaOficinas;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		2732C71C1DA4C08CEFF5422A /* Pods_BuscaOficinasUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BuscaOficinasUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42673FCBB877F54914EE9173 /* Pods-BuscaOficinasTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BuscaOficinasTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BuscaOficinasTests/Pods-BuscaOficinasTests.release.xcconfig"; sourceTree = "<group>"; };
+		56319F082355135D003669A1 /* ListViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewControllerSpec.swift; sourceTree = "<group>"; };
+		56319F0A23552726003669A1 /* DetailViewControllerSpec.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerSpec.swift; sourceTree = "<group>"; };
 		56B171082354CC840064267B /* ListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListResponse.swift; sourceTree = "<group>"; };
 		56B1710A2354E8880064267B /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
 		56DFBBF2233E81C100B6BD19 /* ListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListCell.swift; sourceTree = "<group>"; };
@@ -62,11 +56,7 @@
 		56EF5D4E233E63DC00E929A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		56EF5D50233E63DC00E929A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56EF5D55233E63DC00E929A9 /* BuscaOficinasTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuscaOficinasTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		56EF5D59233E63DC00E929A9 /* BuscaOficinasTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaOficinasTests.swift; sourceTree = "<group>"; };
 		56EF5D5B233E63DC00E929A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		56EF5D60233E63DC00E929A9 /* BuscaOficinasUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BuscaOficinasUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		56EF5D64233E63DC00E929A9 /* BuscaOficinasUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscaOficinasUITests.swift; sourceTree = "<group>"; };
-		56EF5D66233E63DC00E929A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56EF5D75233E656800E929A9 /* OficinaService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OficinaService.swift; sourceTree = "<group>"; };
 		56EF5D78233E660800E929A9 /* Oficina.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oficina.swift; sourceTree = "<group>"; };
 		56EF5D7A233E7EEB00E929A9 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
@@ -96,14 +86,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		56EF5D5D233E63DC00E929A9 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2BC3B2149BED3D5746B9390D /* Pods_BuscaOficinasUITests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -122,7 +104,6 @@
 			children = (
 				56EF5D43233E63D900E929A9 /* BuscaOficinas */,
 				56EF5D58233E63DC00E929A9 /* BuscaOficinasTests */,
-				56EF5D63233E63DC00E929A9 /* BuscaOficinasUITests */,
 				56EF5D42233E63D900E929A9 /* Products */,
 				B757866DF868CF41CFCE33C5 /* Pods */,
 				11A071B701DA47640827FA9F /* Frameworks */,
@@ -134,7 +115,6 @@
 			children = (
 				56EF5D41233E63D900E929A9 /* BuscaOficinas.app */,
 				56EF5D55233E63DC00E929A9 /* BuscaOficinasTests.xctest */,
-				56EF5D60233E63DC00E929A9 /* BuscaOficinasUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -158,19 +138,11 @@
 		56EF5D58233E63DC00E929A9 /* BuscaOficinasTests */ = {
 			isa = PBXGroup;
 			children = (
-				56EF5D59233E63DC00E929A9 /* BuscaOficinasTests.swift */,
 				56EF5D5B233E63DC00E929A9 /* Info.plist */,
+				56319F082355135D003669A1 /* ListViewControllerSpec.swift */,
+				56319F0A23552726003669A1 /* DetailViewControllerSpec.swift */,
 			);
 			path = BuscaOficinasTests;
-			sourceTree = "<group>";
-		};
-		56EF5D63233E63DC00E929A9 /* BuscaOficinasUITests */ = {
-			isa = PBXGroup;
-			children = (
-				56EF5D64233E63DC00E929A9 /* BuscaOficinasUITests.swift */,
-				56EF5D66233E63DC00E929A9 /* Info.plist */,
-			);
-			path = BuscaOficinasUITests;
 			sourceTree = "<group>";
 		};
 		56EF5D72233E63F000E929A9 /* Services */ = {
@@ -254,6 +226,7 @@
 				56EF5D51233E63DC00E929A9 /* Sources */,
 				56EF5D52233E63DC00E929A9 /* Frameworks */,
 				56EF5D53233E63DC00E929A9 /* Resources */,
+				1589FC602E96C8F2CB385F9E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -264,25 +237,6 @@
 			productName = BuscaOficinasTests;
 			productReference = 56EF5D55233E63DC00E929A9 /* BuscaOficinasTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		56EF5D5F233E63DC00E929A9 /* BuscaOficinasUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 56EF5D6F233E63DC00E929A9 /* Build configuration list for PBXNativeTarget "BuscaOficinasUITests" */;
-			buildPhases = (
-				78A61140BB2A7EB9FA354AEC /* [CP] Check Pods Manifest.lock */,
-				56EF5D5C233E63DC00E929A9 /* Sources */,
-				56EF5D5D233E63DC00E929A9 /* Frameworks */,
-				56EF5D5E233E63DC00E929A9 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				56EF5D62233E63DC00E929A9 /* PBXTargetDependency */,
-			);
-			name = BuscaOficinasUITests;
-			productName = BuscaOficinasUITests;
-			productReference = 56EF5D60233E63DC00E929A9 /* BuscaOficinasUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -298,10 +252,6 @@
 						CreatedOnToolsVersion = 10.1;
 					};
 					56EF5D54233E63DC00E929A9 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 56EF5D40233E63D900E929A9;
-					};
-					56EF5D5F233E63DC00E929A9 = {
 						CreatedOnToolsVersion = 10.1;
 						TestTargetID = 56EF5D40233E63D900E929A9;
 					};
@@ -322,7 +272,6 @@
 			targets = (
 				56EF5D40233E63D900E929A9 /* BuscaOficinas */,
 				56EF5D54233E63DC00E929A9 /* BuscaOficinasTests */,
-				56EF5D5F233E63DC00E929A9 /* BuscaOficinasUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -346,16 +295,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		56EF5D5E233E63DC00E929A9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1589FC602E96C8F2CB385F9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BuscaOficinasTests/Pods-BuscaOficinasTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
+				"${BUILT_PRODUCTS_DIR}/Nimble-Snapshots/Nimble_Snapshots.framework",
+				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
+				"${BUILT_PRODUCTS_DIR}/iOSSnapshotTestCase/FBSnapshotTestCase.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble_Snapshots.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BuscaOficinasTests/Pods-BuscaOficinasTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		321131E4712BB08D726CAA83 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -392,24 +358,6 @@
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-BuscaOficinas-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		78A61140BB2A7EB9FA354AEC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BuscaOficinasUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -458,15 +406,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				56EF5D5A233E63DC00E929A9 /* BuscaOficinasTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		56EF5D5C233E63DC00E929A9 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				56EF5D65233E63DC00E929A9 /* BuscaOficinasUITests.swift in Sources */,
+				56319F0B23552726003669A1 /* DetailViewControllerSpec.swift in Sources */,
+				56319F092355135D003669A1 /* ListViewControllerSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,11 +418,6 @@
 			isa = PBXTargetDependency;
 			target = 56EF5D40233E63D900E929A9 /* BuscaOficinas */;
 			targetProxy = 56EF5D56233E63DC00E929A9 /* PBXContainerItemProxy */;
-		};
-		56EF5D62233E63DC00E929A9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 56EF5D40233E63D900E929A9 /* BuscaOficinas */;
-			targetProxy = 56EF5D61233E63DC00E929A9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -699,46 +635,6 @@
 			};
 			name = Release;
 		};
-		56EF5D70233E63DC00E929A9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DF4B4F0E36559310EF735854 /* Pods-BuscaOficinasUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BuscaOficinasUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = BCM.BuscaOficinasUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BuscaOficinas;
-			};
-			name = Debug;
-		};
-		56EF5D71233E63DC00E929A9 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8A377E92A289ECE791C26BF9 /* Pods-BuscaOficinasUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BuscaOficinasUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = BCM.BuscaOficinasUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BuscaOficinas;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -765,15 +661,6 @@
 			buildConfigurations = (
 				56EF5D6D233E63DC00E929A9 /* Debug */,
 				56EF5D6E233E63DC00E929A9 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		56EF5D6F233E63DC00E929A9 /* Build configuration list for PBXNativeTarget "BuscaOficinasUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				56EF5D70233E63DC00E929A9 /* Debug */,
-				56EF5D71233E63DC00E929A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -3,27 +3,50 @@ PODS:
   - AlamofireObjectMapper (5.2.0):
     - Alamofire (~> 4.7)
     - ObjectMapper (~> 3.4)
+  - iOSSnapshotTestCase (6.0.3):
+    - iOSSnapshotTestCase/SwiftSupport (= 6.0.3)
+  - iOSSnapshotTestCase/Core (6.0.3)
+  - iOSSnapshotTestCase/SwiftSupport (6.0.3):
+    - iOSSnapshotTestCase/Core
+  - Nimble (8.0.1)
+  - Nimble-Snapshots (7.1.0):
+    - Nimble-Snapshots/Core (= 7.1.0)
+  - Nimble-Snapshots/Core (7.1.0):
+    - iOSSnapshotTestCase (~> 6.0)
+    - Nimble (~> 8.0)
   - Nuke (7.6.3)
   - ObjectMapper (3.4.2)
+  - Quick (2.1.0)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireObjectMapper
+  - Nimble
+  - Nimble-Snapshots
   - Nuke
+  - Quick
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - AlamofireObjectMapper
+    - iOSSnapshotTestCase
+    - Nimble
+    - Nimble-Snapshots
     - Nuke
     - ObjectMapper
+    - Quick
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AlamofireObjectMapper: 92b6ce2423a9d159e686f6a1d514a009bf903ddc
+  iOSSnapshotTestCase: 944a73f6d9676302811a86c0cf35f0e6ef5ab2a0
+  Nimble: 45f786ae66faa9a709624227fae502db55a8bdd0
+  Nimble-Snapshots: 2ec985281eef0eb9fc69a469deee851363a50d0e
   Nuke: 44130e95e09463f8773ae4b96b90de1eba6b3350
   ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
 
-PODFILE CHECKSUM: 92297a06ed24f4cd893f11cc5d0702d3cdb2c66e
+PODFILE CHECKSUM: 813941cec28868548b20b6381d03354c8cb67018
 
 COCOAPODS: 1.5.0

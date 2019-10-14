@@ -13,8 +13,8 @@ protocol DetailViewControllerProtocol {
     func didLoadDetails(details: Details)
 }
 class DetailViewController: UIViewController {
-    @IBOutlet private var detailView: UIView!
-    @IBOutlet private var loadingView: UIActivityIndicatorView!
+    @IBOutlet var detailView: UIView!
+    @IBOutlet var loadingView: UIActivityIndicatorView!
     @IBOutlet private var nameValue: UILabel!
     @IBOutlet private var phoneValue: UILabel!
     @IBOutlet private var addressValue: UILabel!

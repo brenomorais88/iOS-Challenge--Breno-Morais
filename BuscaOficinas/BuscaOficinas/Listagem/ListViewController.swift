@@ -33,8 +33,7 @@ class ListViewController: UIViewController {
         tableView.register(UINib(nibName: "ListCell", bundle: nil), forCellReuseIdentifier: "ListCell")
         tableView.delegate = self
         tableView.dataSource = self
-        listViewModel = ListViewModel(delegate: self,
-                                      tableView: self.tableView)
+        listViewModel = ListViewModel(delegate: self)
         
         listViewModel?.loadOficinas()
     }
@@ -94,6 +93,7 @@ extension ListViewController: UITableViewDelegate, UITableViewDataSource {
 extension ListViewController: ListViewControllerProtocol {
     func didChangeUIStatus(status: ViewMode) {
         setupViewMode(viewMode: status)
+        self.tableView.reloadData()
     }
 }
 

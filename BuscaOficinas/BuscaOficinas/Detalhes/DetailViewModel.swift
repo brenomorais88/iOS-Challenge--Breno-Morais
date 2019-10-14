@@ -24,16 +24,16 @@ class DetailViewModel {
                 return
             }
             
-            let mockedDetails = Details()
-            mockedDetails.icon = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStiKiMyoiXWsDhbVlvcQ1uCmaLUTamfPUlKzoWUJmOrcjbhQb_"
-            mockedDetails.id = "10"
-            mockedDetails.name = "breno"
-            mockedDetails.rating = "4.5"
-            mockedDetails.website = "www.google.com"
-            mockedDetails.vicinity = "via anchieta"
-            mockedDetails.phone = "11-29039293"
+//            let mockedDetails = Details()
+//            mockedDetails.icon = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStiKiMyoiXWsDhbVlvcQ1uCmaLUTamfPUlKzoWUJmOrcjbhQb_"
+//            mockedDetails.id = "10"
+//            mockedDetails.name = "breno"
+//            mockedDetails.rating = "4.5"
+//            mockedDetails.website = "www.google.com"
+//            mockedDetails.vicinity = "via anchieta"
+//            mockedDetails.phone = "11-29039293"
             
-            self.delegate.didLoadDetails(details: mockedDetails)
+            self.delegate.didLoadDetails(details: details)
         }
     }
 }
