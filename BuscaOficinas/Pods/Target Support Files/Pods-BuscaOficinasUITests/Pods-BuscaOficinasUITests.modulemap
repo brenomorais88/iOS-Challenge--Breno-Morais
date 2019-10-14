@@ -1,0 +1,6 @@
+framework module Pods_BuscaOficinasUITests {
+  umbrella header "Pods-BuscaOficinasUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
